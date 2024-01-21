@@ -6,10 +6,10 @@ ENV GENERATE_SOURCEMAP false
 ENV REACT_APP_SERVER_URL=${REACT_APP_SERVER_URL}
 
 # set working directory
-WORKDIR /app
+WORKDIR /build
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+# # add `/app/node_modules/.bin` to $PATH
+# ENV PATH /build/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json package.json

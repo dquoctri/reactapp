@@ -47,3 +47,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Technical Document 
+Typical React Project Structure
+src/components: Contains reusable UI components like buttons, inputs, etc.
+src/pages: Contains components that represent entire pages.
+src/utils or src/lib: Utility functions, custom hooks.
+src/assets: Static files like images, fonts.
+src/styles: Global stylesheets and Tailwind CSS configuration files.
+src/App.js: Main application component that holds the overall layout.
+src/index.js: Entry point for React application.
+
