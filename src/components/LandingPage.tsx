@@ -5,7 +5,7 @@ function LandingPage() {
   return (
     <div className="flex justify-center items-center h-screen bg-fixed bg-center bg-cover custom-img">
       <div className="backdrop-blur-md bg-black bg-opacity-50 p-10 rounded-lg">
-        <Header />
+        <Header onLogin={() => {}} onSignUp={() => {}}/>
         <div className="text-white mt-10">
           <h1 className="text-4xl font-bold mb-4">3D Glassmorphism Landing Page</h1>
           <p className="mb-4">

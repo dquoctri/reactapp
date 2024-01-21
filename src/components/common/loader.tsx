@@ -1,5 +1,4 @@
 import React from "react"
-import "./loader.css"
 
 interface LoaderProps {
   text?: string

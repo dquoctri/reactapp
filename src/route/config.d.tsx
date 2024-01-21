@@ -1,23 +1,23 @@
 import React, { lazy } from "react"
 import { Navigate, RouteObject } from "react-router-dom"
-import MainLayout from "components/layout/main.layout"
+import MainLayout from "components/layout/main"
 import AdminLayout from "components/layout/admin.layout"
 import Loadable from "./Loadable"
 
-const NotFound = Loadable(lazy(() => import("../pages/warning/404")))
-const Unauthorized = Loadable(lazy(() => import("../pages/warning/401")))
-const Forbidden = Loadable(lazy(() => import("../pages/warning/403")))
-const Login = Loadable(lazy(() => import("../pages/login")))
-const Home = Loadable(lazy(() => import("../pages/home")))
-const Dashboard = Loadable(lazy(() => import("../pages/dashboard")))
-const Profile = Loadable(lazy(() => import("../pages/profile")))
-const Settings = Loadable(lazy(() => import("../pages/setting")))
+const NotFound = Loadable(lazy(() => import("pages/warning/404")))
+const Unauthorized = Loadable(lazy(() => import("pages/warning/401")))
+const Forbidden = Loadable(lazy(() => import("pages/warning/403")))
+const Login = Loadable(lazy(() => import("pages/login")))
+const Home = Loadable(lazy(() => import("pages/home")))
+const Dashboard = Loadable(lazy(() => import("pages/dashboard")))
+const Profile = Loadable(lazy(() => import("pages/profile")))
+const Settings = Loadable(lazy(() => import("pages/setting")))
 const AdminDashboard = Loadable(
-  lazy(() => import("../pages/admin/dashboard")),
+  lazy(() => import("pages/admin/dashboard")),
   { roles: [], features: ["Hello"] }
 )
 const Management = Loadable(
-  lazy(() => import("../pages/admin/management")),
+  lazy(() => import("pages/admin/management")),
   { roles: ["VIEW"], features: ["Hello"] }
 )
 
